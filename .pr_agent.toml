@@ -1,0 +1,13 @@
+[config]
+model = "deepseek/deepseek-v4-pro"
+fallback_models = ["deepseek/deepseek-v4-flash"]
+output_run_details = true
+restricted_mode = true
+repo_context_files = ["AGENTS.md", "CLAUDE.md"]
+repo_context_from_default_branch = true
+
+[github_action_config]
+auto_review = true
+auto_describe = false
+auto_improve = false
+pr_actions = ["opened", "reopened", "ready_for_review", "synchronize"]
